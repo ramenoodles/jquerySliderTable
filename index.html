@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Copyright Ram Senthil github @ramenoodles-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/stylesheet.css"><!-- CSS File -->
+	
+  </head>
+  <body>
+    <h1>Dynamic Multiplication Table</h1>
+    
+    <h2>Please enter the table ranges</h2>
+    <h3>Enter integers between -50 and 50</h3>
+    <form id = "multTable"> <!--https://www.w3schools.com/html/html_forms.asp-->
+        <label for="minColumnValue">Minimum Column Value</label>
+        <input type="number" id="minColumnValue" name="minColumnValue"><br><br>
+        <input type="range" id="minColumnValueSlider" min="-50" max = "50"><br><br>
+
+        <label for="maxColumnValue">Maximum Column Value</label>
+        <input type="number" id="maxColumnValue" name="maxColumnValue"><br><br>
+        <input type="range" id="maxColumnValueSlider" min="-50" max = "50"><br><br>
+
+        <label for="minRowValue">Minimum Row Value</label>
+        <input type="number" id="minRowValue" name="minRowValue"><br><br>
+        <input type="range" id="minRowValueSlider" min="-50" max = "50"><br><br>
+
+        <label for="maxRowValue">Maximum Row Value</label>
+        <input type="number" id="maxRowValue"><br><br>
+        <input type="range" id="maxRowValueSlider" min="-50" max = "50">
+        <!-- Input Fields -->
+    
+        
+        <div id="multiplicationTable"></div><!-- Table Display -->
+    
+        
+    </form><!-- Form End -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><!-- jQuery Library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script><!-- jQuery Validation Plugin -->
+    <script src="js/content.js"></script><!-- JavaScript File -->
+  </body>
+</html>
